@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 
 interface YoutubeEmbedProps {
   embedSrc: string | undefined;
