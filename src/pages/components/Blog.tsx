@@ -5,10 +5,6 @@ export default function Blog() {
     return (
       <div>
         <div>
-          <Image
-            src={"https://blocks.astratic.com/img/general-img-landscape.png"}
-            alt="Display photo"
-          />
         </div>
         <div>
           <p>
