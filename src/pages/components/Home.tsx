@@ -1,5 +1,3 @@
-import YoutubeEmbed from "./YouTubeEmbed";
-
 export default function Home() {
     return (
         <div>

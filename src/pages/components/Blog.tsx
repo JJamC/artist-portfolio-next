@@ -1,5 +1,3 @@
-import headShot from "../assets/website.jpg"
-
 export default function Blog() {
 
     return (

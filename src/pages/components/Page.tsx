@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import YoutubeEmbed from "./YouTubeEmbed";
 import ContactForm from "./Contact";
 import Home from "..";
 import Compositions from "./Compositions";
@@ -10,7 +8,6 @@ interface PageProps {
 }
 
 export default function Page({ nav }: PageProps) {
-  const [renderedOnPage, setRenderedOnPage] = useState<string[][]>([["Home"]]);
 
   if (nav === "Contact") {
     return (
