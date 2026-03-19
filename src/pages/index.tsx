@@ -8,6 +8,7 @@ export default function Home() {
   const [nav, setNav] = useState("");
 
   return (
+    <div className="min-h-screen flex items-center justify-center">
     <div className="grid grid-cols-[minmax(350px,1fr)_3fr] gap-4">
       <div className="grid-span-1 justify-self-center">
         <Title />
@@ -24,6 +25,7 @@ export default function Home() {
       <div className="grid-span-2">
         <Page nav={nav} />
       </div>
-    </div>
+      </div>
+      </div>
   );
 }

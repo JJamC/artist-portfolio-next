@@ -22,7 +22,7 @@ export default function YoutubeEmbed({
 
   return (
     <li
-      className="w-62 h-62 aspect-video overflow-hidden"
+      className="w-62 h-62 aspect-video overflow-hidden transition-transform transition-shadow duration-300 hover:scale-105 hover:shadow-[0_10px_30px_rgba(0,0,0,0.2)]"
     >
       {!isPlaying ? (
         <div onClick={handlePlay} className="h-full w-full">

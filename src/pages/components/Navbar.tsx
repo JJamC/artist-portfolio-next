@@ -9,7 +9,7 @@ export default function Navbar({ setNav }: NavbarProps) {
   };
 
   return (
-    <nav className="flex gap-4 justify-self-center content-center">
+    <nav className="flex gap-4 justify-self-center content-center text-lg">
       <a
         href="#"
         onClick={(e) => {
