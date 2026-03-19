@@ -9,7 +9,7 @@ export default function Navbar({ setNav }: NavbarProps) {
   };
 
   return (
-    <nav>
+    <nav className="flex gap-4 justify-self-center content-center">
       <a
         href="#"
         onClick={(e) => {
@@ -17,7 +17,7 @@ export default function Navbar({ setNav }: NavbarProps) {
           handleNavClick("Home");
         }}
       >
-        <h2 className="nav-h2">Home</h2>
+        <h2>Home</h2>
       </a>
 
       <a
@@ -27,7 +27,7 @@ export default function Navbar({ setNav }: NavbarProps) {
           handleNavClick("Recordings");
         }}
       >
-        <h2 className="nav-h2">Recordings</h2>
+        <h2>Recordings</h2>
       </a>
 
       <a
@@ -37,7 +37,7 @@ export default function Navbar({ setNav }: NavbarProps) {
           handleNavClick("Compositions");
         }}
       >
-        <h2 className="nav-h2">Compositions</h2>
+        <h2>Compositions</h2>
       </a>
 
       <a
@@ -47,7 +47,7 @@ export default function Navbar({ setNav }: NavbarProps) {
           handleNavClick("Contact");
         }}
       >
-        <h2 className="nav-h2">Contact</h2>
+        <h2>Contact</h2>
       </a>
     </nav>
   );

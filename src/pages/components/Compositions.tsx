@@ -1,6 +1,9 @@
+import { useState } from "react";
 import YoutubeEmbed from "./YouTubeEmbed";
 
 export default function Compositions() {
+
+  const [videoPlaying, setVideoPlaying] = useState<string | null>(null);
 
     const prints = [
         [
@@ -47,13 +50,15 @@ export default function Compositions() {
 
     return (
           <div>
-            <ul className="youtube-grid">
+            <ul className="flex flex-wrap gap-1 justify-self-center">
               {prints.map(([src, thumbnail], i) => {
                 return (
                   <YoutubeEmbed
                     key={i}
                     embedSrc={src}
                     thumbnail={thumbnail}
+                    setVideoPlaying={setVideoPlaying}
+                    isPlaying={videoPlaying===src}
                   />
                 );
               })}

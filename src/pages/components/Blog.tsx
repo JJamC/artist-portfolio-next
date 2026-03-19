@@ -4,10 +4,7 @@ export default function Blog() {
 
     return (
       <div>
-        <div>
-        </div>
-        <div>
-          <p>
+          <p className="text-center">
             <b>Jay Jameil Carroll</b> is a pianist, composer and producer. Jay
             studied piano at the Royal Northern College of Music where he was
             deeply involved in chamber music, winning both the Nossek Prize (as
@@ -26,6 +23,5 @@ export default function Blog() {
             London and Bristol.
           </p>
         </div>
-      </div>
     );
 }

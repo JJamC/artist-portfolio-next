@@ -1,6 +1,11 @@
+import { useState } from "react";
 import YoutubeEmbed from "./YouTubeEmbed";
 
 export default function Recordings() {
+
+
+    const [videoPlaying, setVideoPlaying] = useState<string | null>(null);
+
     const recordings = [
           [
             "https://www.youtube.com/embed/dcQ_j8vI51I?si=ESapAf-NXIgRFxsY",
@@ -21,19 +26,21 @@ export default function Recordings() {
     ]
     
     return (
-           <div>
-                    <ul className="youtube-grid">
-                      {recordings.map(([src, thumbnail], i) => {
-                        return (
-                          <YoutubeEmbed
-                            key={i}
-                            embedSrc={src}
-                            thumbnail={thumbnail}
-                          />
-                        );
-                      })}
-                    </ul>
-                  </div>
-                );
+      <div>
+        <ul className="flex flex-wrap gap-1">
+          {recordings.map(([src, thumbnail], i) => {
+            return (
+              <YoutubeEmbed
+                key={i}
+                embedSrc={src}
+                thumbnail={thumbnail}
+                setVideoPlaying={setVideoPlaying}
+                isPlaying={videoPlaying === src}
+              />
+            );
+          })}
+        </ul>
+      </div>
+    );
 
 }

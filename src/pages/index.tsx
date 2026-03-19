@@ -8,8 +8,8 @@ export default function Home() {
   const [nav, setNav] = useState("");
 
   return (
-    <div className="grid grid-cols-[200px_minmax(300px,_1fr)]">
-      <div className="grid-span-1">
+    <div className="grid grid-cols-[minmax(350px,1fr)_3fr] gap-4">
+      <div className="grid-span-1 justify-self-center">
         <Title />
       </div>
 
@@ -17,7 +17,7 @@ export default function Home() {
         <Navbar setNav={setNav} />
       </div>
 
-      <div className="grid-span-1">
+      <div className="grid-span-1 content-center">
         <Blog />
       </div>
 
