@@ -21,22 +21,18 @@ export default function YoutubeEmbed({
   };
 
   return (
-    <li
-      className="w-62 h-62 aspect-video overflow-hidden transition-transform transition-shadow duration-300 hover:scale-105 hover:shadow-[0_10px_30px_rgba(0,0,0,0.2)]"
-    >
+    <li className="aspect-video h-70 w-70 overflow-hidden transition-shadow transition-transform duration-300 hover:scale-105 hover:shadow-[0_10px_30px_rgba(0,0,0,0.2)]">
       {!isPlaying ? (
-        <div onClick={handlePlay} className="h-full w-full">
+        <div
+          onClick={handlePlay}
+          className="group relative inline-block h-full w-full"
+        >
           <img
-            className="block h-full w-full object-cover"
+            className="h-full w-full object-cover"
             src={thumbnail}
             alt="YouTube thumbnail"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              display: "block",
-            }}
           />
+          <span className="absolute inset-0 border-2 border-transparent transition-all duration-300 group-hover:border-[#4F517D]"></span>
         </div>
       ) : (
         <iframe
@@ -44,7 +40,6 @@ export default function YoutubeEmbed({
           title="YouTube video"
           allow="autoplay; encrypted-media"
           allowFullScreen
-          style={{ width: "100%", height: "100%", border: 0 }}
         />
       )}
     </li>

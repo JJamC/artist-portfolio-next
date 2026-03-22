@@ -21,10 +21,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div>
-      <div aria-hidden="true" className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-      </div>
-      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20 place-items-center">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label className="block text-sm/6 font-semibold text-gray-900">First name</label>
@@ -55,6 +52,5 @@ export default function ContactForm() {
           <button type="submit" className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send</button>
         </div>
       </form>
-    </div>
   )
 }

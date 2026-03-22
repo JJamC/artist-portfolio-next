@@ -11,11 +11,7 @@ interface PageProps {
 
 export default function Page({ nav }: PageProps) {
   if (nav === "Contact") {
-    return (
-      <div>
-        <ContactForm />
-      </div>
-    );
+    return <ContactForm />
   }
 
   if (nav === "Compositions") {
