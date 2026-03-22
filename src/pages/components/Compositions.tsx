@@ -50,7 +50,7 @@ export default function Compositions() {
 
     return (
       <div>
-        <ul className="flex flex-wrap gap-[60px]">
+        <ul className="flex flex-wrap gap-[60px] justify-end">
           {prints.map(([src, thumbnail], i) => {
             return (
               <YoutubeEmbed

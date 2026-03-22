@@ -13,9 +13,9 @@ export default function Blog() {
       />
       <br></br>
       <div>
-        <p className="text-white text-[16px] p-5">
-          <b>Jay Jameil Carroll</b> is a pianist, composer and music producer based in Manchester, England.
-          
+        <p className="p-5 text-[16px] text-[#D2E4C4]">
+          <b>Jay Jameil Carroll</b> is a pianist, composer and music producer
+          based in Manchester, England.
         </p>
       </div>
     </div>
