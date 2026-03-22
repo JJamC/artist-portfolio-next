@@ -9,9 +9,8 @@ export default function Navbar({ setNav }: NavbarProps) {
   };
 
   return (
-    <nav className="flex content-center gap-4 justify-self-center text-lg text-[#D2E4C4]">
+    <nav className="flex justify-end gap-4 text-[16px] text-white">
       <a
-        className="after:bg-[#D2E4C4] relative bg-[#293F14] p-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all hover:after:w-full"
         href="#"
         onClick={(e) => {
           e.preventDefault();
@@ -22,7 +21,6 @@ export default function Navbar({ setNav }: NavbarProps) {
       </a>
 
       <a
-        className="relative bg-[#293F14] p-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#D2E4C4] after:transition-all hover:after:w-full"
         href="#"
         onClick={(e) => {
           e.preventDefault();
@@ -33,7 +31,6 @@ export default function Navbar({ setNav }: NavbarProps) {
       </a>
 
       <a
-        className="relative bg-[#293F14] p-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#D2E4C4] after:transition-all hover:after:w-full"
         href="#"
         onClick={(e) => {
           e.preventDefault();
@@ -44,7 +41,6 @@ export default function Navbar({ setNav }: NavbarProps) {
       </a>
 
       <a
-        className="relative bg-[#293F14] p-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#D2E4C4] after:transition-all hover:after:w-full"
         href="#"
         onClick={(e) => {
           e.preventDefault();

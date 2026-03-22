@@ -27,7 +27,7 @@ export default function Recordings() {
     
     return (
       <div>
-        <ul className="flex flex-wrap gap-3 justify-self-center">
+        <ul className="flex flex-wrap gap-3">
           {recordings.map(([src, thumbnail], i) => {
             return (
               <YoutubeEmbed

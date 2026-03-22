@@ -49,20 +49,20 @@ export default function Compositions() {
     ];
 
     return (
-          <div>
-            <ul className="flex flex-wrap gap-1.5 place-items-center">
-              {prints.map(([src, thumbnail], i) => {
-                return (
-                  <YoutubeEmbed
-                    key={i}
-                    embedSrc={src}
-                    thumbnail={thumbnail}
-                    setVideoPlaying={setVideoPlaying}
-                    isPlaying={videoPlaying===src}
-                  />
-                );
-              })}
-            </ul>
-          </div>
-        );
+      <div>
+        <ul className="flex flex-wrap gap-[60px]">
+          {prints.map(([src, thumbnail], i) => {
+            return (
+              <YoutubeEmbed
+                key={i}
+                embedSrc={src}
+                thumbnail={thumbnail}
+                setVideoPlaying={setVideoPlaying}
+                isPlaying={videoPlaying === src}
+              />
+            );
+          })}
+        </ul>
+      </div>
+    );
 }

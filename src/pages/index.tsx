@@ -8,7 +8,7 @@ export default function Home() {
   const [nav, setNav] = useState("Home");
 
   return (
-    <div className="flex min-h-screen items-center justify-center m-8">
+    <div className="flex min-h-screen items-center justify-center m-25">
       <div className="grid grid-cols-[minmax(350px,1fr)_3fr] gap-4">
         <div className="grid-span-1 justify-self-center">
           <Title />

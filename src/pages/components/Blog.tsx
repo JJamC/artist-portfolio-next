@@ -2,9 +2,28 @@ import Image from "next/image";
 
 export default function Blog() {
 
-    return (
-      <div className="bg-[#293F14]">
-        <p className="text-[#D2E4C4 text-[#D2E4C4] p-5">
+  return (
+    <div>
+      <img
+        className="h-full w-full object-cover"
+        src={
+          "https://artist-page-images-32345.s3.eu-north-1.amazonaws.com/Prints/website.jpg"
+        }
+        alt="YouTube thumbnail"
+      />
+      <br></br>
+      <div>
+        <p className="text-white text-[16px] p-5">
+          <b>Jay Jameil Carroll</b> is a pianist, composer and music producer based in Manchester, England.
+          
+        </p>
+      </div>
+    </div>
+  );
+}
+
+/*
+        <p className="text-white p-5">
           <b>Jay Jameil Carroll</b> is a pianist, composer and music producer.
           Jay studied piano at the Royal Northern College of Music where he was
           deeply involved in chamber music, winning both the Nossek Prize (as a
@@ -25,6 +44,4 @@ export default function Blog() {
           currently based in Manchester and is in collaboration with artists
           from London and Bristol.
         </p>
-      </div>
-    );
-}
+        */
