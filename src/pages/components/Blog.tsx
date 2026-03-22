@@ -14,12 +14,11 @@ export default function Blog() {
             classical pianist, Jay constructs his programmes with emotional arcs
             and narratives and aims to shed light on lesser known works. Jay
             composes across a range of genres and mediums including contemporary
-            classical, electronic music and Jazz, with influences from his
-            specialism in 20th Century French Classical Music and love for dance
+            classical, electronic music and Jazz, with influences including Impressionism, video game music and dance
             music. At the heart of his work is playful curiosity and brave
             eclecticism which take his practice to colourful, sometimes
-            unexpected but nonetheless exciting, destinations. He is currently
-            based in Manchester, but frequently collaborates with artists from
+            unexpected, places. He is currently
+            based in Manchester and is in collaboration with artists from
             London and Bristol.
           </p>
         </div>

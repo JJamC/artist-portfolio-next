@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Page from "./components/Page";
 
 export default function Home() {
-  const [nav, setNav] = useState("");
+  const [nav, setNav] = useState("Home");
 
   return (
     <div className="min-h-screen flex items-center justify-center">
