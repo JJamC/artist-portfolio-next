@@ -4,7 +4,7 @@ import YoutubeEmbed from "./YouTubeEmbed";
 export default function Recordings() {
 
 
-    const [videoPlaying, setVideoPlaying] = useState<string | null>(null);
+    const [videoPlaying, setVideoPlaying] = useState<string>("");
 
     const recordings = [
           [
@@ -27,7 +27,7 @@ export default function Recordings() {
     
     return (
       <div>
-        <ul className="flex flex-wrap gap-[60px] justify-end">
+        {/* <ul className="flex flex-wrap justify-end gap-[60px]">
           {recordings.map(([src, thumbnail], i) => {
             return (
               <YoutubeEmbed
@@ -39,7 +39,7 @@ export default function Recordings() {
               />
             );
           })}
-        </ul>
+        </ul> */}
       </div>
     );
 

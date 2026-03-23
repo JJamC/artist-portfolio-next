@@ -1,6 +1,6 @@
 import ContactForm from "./Contact";
 import Home from "..";
-import Compositions from "./Compositions";
+import Prints from "./Prints";
 import Recordings from "./Recordings";
 import { useState } from "react";
 import HomePage from "./Homepage";
@@ -11,11 +11,11 @@ interface PageProps {
 
 export default function Page({ nav }: PageProps) {
   if (nav === "Contact") {
-    return <ContactForm />
+    return <ContactForm />;
   }
 
-  if (nav === "Compositions") {
-    return <Compositions />;
+  if (nav === "prints") {
+    return <Prints />;
   }
 
   if (nav === "Recordings") {

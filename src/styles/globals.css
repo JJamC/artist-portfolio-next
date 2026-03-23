@@ -6,4 +6,5 @@
 }
 
 body {
-  background-color: black}
+  background-color: black;
+  @apply text-[#D2E4C4]}

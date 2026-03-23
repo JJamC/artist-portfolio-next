@@ -1,0 +1,89 @@
+import { useState } from "react";
+import YoutubeEmbed from "./YouTubeEmbed";
+
+export default function Prints() {
+
+  const [videoPlaying, setVideoPlaying] = useState<string>(
+    "https://www.youtube.com/embed/Xf_Mv3VpOjo?si=0s40wFEei_dh6g_F",
+  );
+  const [active, setActive] = useState("");
+
+  const prints = [
+    [
+      "https://www.youtube.com/embed/Xf_Mv3VpOjo?si=0s40wFEei_dh6g_F",
+      "https://artist-page-images-32345.s3.eu-north-1.amazonaws.com/Prints/presDeLaMer.jpg",
+    ],
+    [
+      "https://www.youtube.com/embed/Wsn8xfz-jRY?si=thFge-EtvZz2h2pi",
+      "https://artist-page-images-32345.s3.eu-north-1.amazonaws.com/Prints/Chatnoir.jpg",
+    ],
+    [
+      "https://www.youtube.com/embed/IR0lNvDrLP8?si=61osa46AS4aT3790",
+      "https://artist-page-images-32345.s3.eu-north-1.amazonaws.com/Prints/rain.jpeg",
+    ],
+    [
+      "https://www.youtube.com/embed/d_fgZCGwYHk?si=G__i1GejBh8N0vQd",
+      "https://artist-page-images-32345.s3.eu-north-1.amazonaws.com/Prints/carp.jpeg",
+    ],
+    [
+      "https://www.youtube.com/embed/1slFw6llvlI?si=FEY7wprxQ_2AW73O",
+      "https://artist-page-images-32345.s3.eu-north-1.amazonaws.com/Prints/manInCafe.jpeg",
+    ],
+    [
+      "https://www.youtube.com/embed/Pl5Xw9HSW2o?si=uic9t9olNrOhke7Q",
+      "https://artist-page-images-32345.s3.eu-north-1.amazonaws.com/Prints/enfantsjouantsurlaplage.jpg",
+    ],
+    [
+      "https://www.youtube.com/embed/3LHxEov0emk?si=nauKN0_mSRvDL8Ud",
+      "https://artist-page-images-32345.s3.eu-north-1.amazonaws.com/Prints/housesInParis.jpeg",
+    ],
+    [
+      "https://www.youtube.com/embed/wKU0duiA_MY?si=tU5KUmbZ0knzt47l",
+      "https://artist-page-images-32345.s3.eu-north-1.amazonaws.com/Prints/letoile.jpg",
+    ],
+    [
+      "https://www.youtube.com/embed/BDiiwHclvlA?si=fBl-U4i8JdI3K99k",
+      "https://artist-page-images-32345.s3.eu-north-1.amazonaws.com/Prints/Screenshot+from+2026-03-22+17-59-45.png",
+    ],
+    [
+      "https://www.youtube.com/embed/MHLeZi5STbw?si=qGu7XgotIARhUcuh",
+      "https://artist-page-images-32345.s3.eu-north-1.amazonaws.com/Prints/pierrot.jpeg",
+    ],
+  ];
+
+  return (
+    <div>
+      <p className="justify-self-end">
+        <b>Prints |</b> "Prints" is a series of short piano compositions
+        composed out of response to various artworks that vivdly inspired me.
+      </p>
+      <br></br>
+      <div className="mb-5 flex flex-wrap justify-end">
+        <iframe
+          className="aspect-[16/7] w-full"
+          src={videoPlaying}
+          title="YouTube video"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        />
+      </div>
+      <div>
+        <ul className="flex flex-wrap justify-end gap-[40px]">
+          {prints.map(([src, thumbnail], i) => {
+            return (
+              <YoutubeEmbed
+                key={i}
+                embedSrc={src}
+                thumbnail={thumbnail}
+                setVideoPlaying={setVideoPlaying}
+                isPlaying={videoPlaying === src}
+                setActive={setActive}
+                active={active}
+              />
+            );
+          })}
+        </ul>
+      </div>
+    </div>
+  );
+}

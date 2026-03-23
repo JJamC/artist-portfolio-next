@@ -33,15 +33,15 @@ export default function Navbar({ setNav, setActive, active }: NavbarProps) {
       </a>
 
       <a
-        className={linkStyles("Compositions")}
+        className={linkStyles("prints")}
         href="#"
         onClick={(e) => {
           e.preventDefault();
-          handleNavClick("Compositions");
-          setActive("Compositions");
+          handleNavClick("prints");
+          setActive("prints");
         }}
       >
-        <h2>Compositions</h2>
+        <h2>Prints</h2>
       </a>
 
       <a

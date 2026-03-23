@@ -11,7 +11,7 @@ export default function Title({ setNav, setActive }: TitleProps) {
 
   return (
     <>
-      <div className="text-[#D2E4C4] justify-self-center">
+      <div className=" justify-self-center">
         <a
           href="#"
           onClick={(e) => {
