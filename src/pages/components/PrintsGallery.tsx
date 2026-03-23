@@ -10,7 +10,7 @@ interface YoutubeEmbedProps {
   active: string
 }
 
-export default function YoutubeEmbed({
+export default function PrintsGallery({
   embedSrc,
   thumbnail,
   setVideoPlaying,

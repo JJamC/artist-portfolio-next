@@ -9,8 +9,8 @@ export default function Home() {
   const [active, setActive] = useState("");
 
   return (
-    <div className="ml-5 mr-5 flex min-h-screen items-center justify-center">
-      <div className="grid grid-cols-[minmax(350px,1fr)_3fr] gap-[70px]">
+    <div className="m-10 flex items-center justify-center">
+      <div className="grid grid-cols-[350px_900px] gap-[70px]">
         <div className="grid-span-1 justify-self-center">
           <Title setNav={setNav} setActive={setActive} />
         </div>

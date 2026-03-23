@@ -1,8 +1,7 @@
 import { useState } from "react";
-import YoutubeEmbed from "./YouTubeEmbed";
+import PrintsGallery from "./PrintsGallery";
 
 export default function Prints() {
-
   const [videoPlaying, setVideoPlaying] = useState<string>(
     "https://www.youtube.com/embed/Xf_Mv3VpOjo?si=0s40wFEei_dh6g_F",
   );
@@ -53,14 +52,13 @@ export default function Prints() {
 
   return (
     <div>
-      <p className="justify-self-end">
-        <b>Prints |</b> "Prints" is a series of short piano compositions
-        composed out of response to various artworks that vivdly inspired me.
-      </p>
-      <br></br>
-      <div className="mb-5 flex flex-wrap justify-end">
+      <div className="mb-5 flex">
+        <p className="w-[200px]">
+          <b>Prints |</b> "Prints" is a series of short piano compositions
+          composed out of response to various artworks that vivdly inspired me.
+        </p>
         <iframe
-          className="aspect-[16/7] w-full"
+          className="aspect-[16/7] w-250"
           src={videoPlaying}
           title="YouTube video"
           allow="autoplay; encrypted-media"
@@ -71,7 +69,7 @@ export default function Prints() {
         <ul className="flex flex-wrap justify-end gap-[40px]">
           {prints.map(([src, thumbnail], i) => {
             return (
-              <YoutubeEmbed
+              <PrintsGallery
                 key={i}
                 embedSrc={src}
                 thumbnail={thumbnail}

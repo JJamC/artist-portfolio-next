@@ -1,6 +1,6 @@
 export default function HomePage() {
     return (
-      <div className="place-self-end">
+      <div className="place-self-center">
         <iframe
           src={
             "https://www.youtube.com/embed/Xf_Mv3VpOjo?autoplay=1&mute=1&vq=hd1080"
