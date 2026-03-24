@@ -7,9 +7,9 @@ export default function About() {
       <p>
         I was born in Manchester where my earliest formative musical influences
         included the souundtracks of The Legend of Zelda and Kingdom Hearts, the
-        garage and bassline tracks I would hear through my sister's bedroom wall
-        and my mum's love of 80s R&B, which would play in the kitchen all all
-        through the summer months.
+        garage and bassline tracks I would hear through my sister&apos;'s
+        bedroom wall and my mum&apos;'s love of 80s R&B, which would play in the
+        kitchen all all through the summer months.
         <br></br>
         <br></br>I began playing piano at the age of 14 and must have learned
         quite quickly as 4 years later I was studying at the Royal Northern
@@ -17,13 +17,15 @@ export default function About() {
         Stott. Chopin was my first love and from there I soon found myself
         enamoured with the music of the 20th Century French composers Debussy,
         Ravel, Poulenc and Dutilleux. During my time at the RNCM I won the
-        Nossek Prize (2020) for Best Piano Trio<br></br> and Best Accompanist in the Cronshaw/Brownson Song Prize (2020) and Courtney Kenny Song Prize (2021)
+        Nossek Prize (2020) for Best Piano Trio<br></br> and Best Accompanist in
+        the Cronshaw/Brownson Song Prize (2020) and Courtney Kenny Song Prize
+        (2021)
         <br></br>
         <br></br>
         Since graduating, highlights include performing at the Royal Dublin
         Society, giving a series of interactive piano duo concerts throughout
         Valencia, Spain and helping to establish a chamber concert series in At
-        Ann's Church, Manchester.
+        Ann&apos;'s Church, Manchester.
         <br></br>
         <br></br>
         As a solo pianist, I construct my programmes around narratives carefully
