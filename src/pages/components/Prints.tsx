@@ -54,7 +54,7 @@ export default function Prints() {
     <div>
       <div className="mb-5 flex">
         <p className="w-[200px]">
-          <b>Prints |</b> &apos;'Prints&apos;' is an ever-growing series of
+          <b>Prints |</b> &apos;Prints&apos; is an ever-growing series of
           short piano compositions composed out of response to artworks that
           have vivdly inspired me.
         </p>
