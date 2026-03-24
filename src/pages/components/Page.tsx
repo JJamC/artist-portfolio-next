@@ -1,20 +1,33 @@
 import ContactForm from "./Contact";
-import Home from "..";
 import Prints from "./Prints";
 import Recordings from "./Recordings";
-import { useState } from "react";
 import HomePage from "./Homepage";
+import About from "./About";
+import Film from "./Film";
+import Production from "./Projects";
 
 interface PageProps {
   nav: string;
 }
 
 export default function Page({ nav }: PageProps) {
+  if (nav === "about") {
+    return <About />;
+  }
+
+  if (nav === "production") {
+    return <Production/>;
+  }
+
+  if (nav === "film") {
+    return <Film />;
+  }
+
   if (nav === "Contact") {
     return <ContactForm />;
   }
 
-  if (nav === "prints") {
+  if (nav === "Compositions") {
     return <Prints />;
   }
 

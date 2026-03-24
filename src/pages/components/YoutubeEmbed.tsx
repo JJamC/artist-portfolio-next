@@ -1,27 +1,28 @@
 interface YoutubeEmbedProps {
   embedSrc: string | undefined;
-  thumbnail: string | undefined;
-  isPlaying: boolean;
-  setVideoPlaying: React.Dispatch<React.SetStateAction<string>>;
+  description: string | undefined;
+  title: string | undefined;
 }
 
 export default function YoutubeEmbed({
   embedSrc,
-  thumbnail,
-  setVideoPlaying,
-  isPlaying,
+  title,
+  description
 }: YoutubeEmbedProps) {
-  const handlePlay = () => {
-    if (embedSrc) setVideoPlaying(embedSrc);
-  };
 
   return (
-      <iframe
-          className="h-60 w-100"
+    <div>
+    <iframe
+      className="h-60 w-100"
       src={embedSrc}
       title="YouTube video"
       allow="autoplay; encrypted-media"
       allowFullScreen
-    />
+      />
+      <div>
+        {title && <p><b>{title}</b></p>}
+    {description && <p>{description}</p>}
+      </div>
+      </div>
   );
 }

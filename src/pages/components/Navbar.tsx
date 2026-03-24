@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 interface NavbarProps {
   setNav: React.Dispatch<React.SetStateAction<string>>;
   setActive: React.Dispatch<React.SetStateAction<string>>;
@@ -21,6 +19,17 @@ export default function Navbar({ setNav, setActive, active }: NavbarProps) {
   return (
     <nav className="flex justify-end gap-4 text-[20px] text-white">
       <a
+        className={linkStyles("about")}
+        href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          handleNavClick("about");
+          setActive("about");
+        }}
+      >
+        <h2>About</h2>
+      </a>
+      <a
         className={linkStyles("Recordings")}
         href="#"
         onClick={(e) => {
@@ -33,15 +42,37 @@ export default function Navbar({ setNav, setActive, active }: NavbarProps) {
       </a>
 
       <a
-        className={linkStyles("prints")}
+        className={linkStyles("Compositions")}
         href="#"
         onClick={(e) => {
           e.preventDefault();
-          handleNavClick("prints");
-          setActive("prints");
+          handleNavClick("Compositions");
+          setActive("Compositions");
         }}
       >
-        <h2>Prints</h2>
+        <h2>Compositions</h2>
+      </a>
+      <a
+        className={linkStyles("film")}
+        href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          handleNavClick("film");
+          setActive("film");
+        }}
+      >
+        <h2>Film</h2>
+      </a>
+      <a
+        className={linkStyles("production")}
+        href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          handleNavClick("production");
+          setActive("production");
+        }}
+      >
+        <h2>Production</h2>
       </a>
 
       <a

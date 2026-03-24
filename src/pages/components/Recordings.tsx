@@ -1,38 +1,23 @@
-import { useState } from "react";
 import YoutubeEmbed from "./YoutubeEmbed";
 export default function Recordings() {
-  const [videoPlaying, setVideoPlaying] = useState<string>("");
 
   const recordings = [
-    [
-      "https://www.youtube.com/embed/dcQ_j8vI51I?si=ESapAf-NXIgRFxsY",
-      "https://img.youtube.com/vi/dcQ_j8vI51I/mqdefault.jpg",
-    ],
-    [
-      "https://www.youtube.com/embed/_F2Yh0cqyXM?si=94NdQ-VheIdyf_Lh",
-      "https://img.youtube.com/vi/_F2Yh0cqyXM/mqdefault.jpg",
-    ],
-    [
-      "https://www.youtube.com/embed/2ZRS0YciqWE?si=TVGuLkxEBiVdIutC",
-      "https://img.youtube.com/vi/2ZRS0YciqWE/mqdefault.jpg",
-    ],
-    [
-      "https://www.youtube.com/embed/CYisGxXxsgM?si=ccSnWh-01LiQEyhf",
-      "https://img.youtube.com/vi/CYisGxXxsgM/mqdefault.jpg",
-    ],
+    ["https://www.youtube.com/embed/dcQ_j8vI51I?si=ESapAf-NXIgRFxsY"],
+    ["https://www.youtube.com/embed/_F2Yh0cqyXM?si=94NdQ-VheIdyf_Lh"],
+    ["https://www.youtube.com/embed/2ZRS0YciqWE?si=TVGuLkxEBiVdIutC"],
+    ["https://www.youtube.com/embed/CYisGxXxsgM?si=ccSnWh-01LiQEyhf"],
   ];
 
   return (
     <div>
       <ul className="flex flex-wrap justify-end gap-[60px]">
-          {recordings.map(([src, thumbnail], i) => {
+          {recordings.map(([src, title, desc], i) => {
             return (
               <YoutubeEmbed
                 key={i}
                 embedSrc={src}
-                thumbnail={thumbnail}
-                setVideoPlaying={setVideoPlaying}
-                isPlaying={videoPlaying === src}
+                title={title}
+                description={desc}
               />
             );
           })}
